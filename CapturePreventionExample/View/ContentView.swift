@@ -14,10 +14,9 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             
-            Text("Hello, world!")
+            Text("Capture Prevention Label")
                 .capturePrevented(isPrevented: true)
-            
-            Spacer()
+                .frame(height: 60)
         }
         .padding()
     }
