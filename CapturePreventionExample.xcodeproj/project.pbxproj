@@ -13,8 +13,7 @@
 		B570E1BB2BB16AE300D1E61B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B570E1BA2BB16AE300D1E61B /* Preview Assets.xcassets */; };
 		B570E1DE2BB16CD000D1E61B /* PreventCapture+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570E1DD2BB16CD000D1E61B /* PreventCapture+Modifier.swift */; };
 		B570E1E02BB16D2B00D1E61B /* PreventCapture+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570E1DF2BB16D2B00D1E61B /* PreventCapture+View.swift */; };
-		B570E1E22BB16D9B00D1E61B /* PreventCaptureHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570E1E12BB16D9B00D1E61B /* PreventCaptureHostingViewController.swift */; };
-		B570E1E42BB16E0900D1E61B /* CapturePreventingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570E1E32BB16E0900D1E61B /* CapturePreventingView.swift */; };
+		B570E1E42BB16E0900D1E61B /* CapturePreventing+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570E1E32BB16E0900D1E61B /* CapturePreventing+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +26,7 @@
 		B570E1BA2BB16AE300D1E61B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B570E1DD2BB16CD000D1E61B /* PreventCapture+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreventCapture+Modifier.swift"; sourceTree = "<group>"; };
 		B570E1DF2BB16D2B00D1E61B /* PreventCapture+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreventCapture+View.swift"; sourceTree = "<group>"; };
-		B570E1E12BB16D9B00D1E61B /* PreventCaptureHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventCaptureHostingViewController.swift; sourceTree = "<group>"; };
-		B570E1E32BB16E0900D1E61B /* CapturePreventingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreventingView.swift; sourceTree = "<group>"; };
+		B570E1E32BB16E0900D1E61B /* CapturePreventing+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CapturePreventing+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +99,7 @@
 			children = (
 				B570E1DD2BB16CD000D1E61B /* PreventCapture+Modifier.swift */,
 				B570E1DF2BB16D2B00D1E61B /* PreventCapture+View.swift */,
-				B570E1E12BB16D9B00D1E61B /* PreventCaptureHostingViewController.swift */,
-				B570E1E32BB16E0900D1E61B /* CapturePreventingView.swift */,
+				B570E1E32BB16E0900D1E61B /* CapturePreventing+UIView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -178,11 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B570E1B52BB16AE200D1E61B /* ContentView.swift in Sources */,
-				B570E1E22BB16D9B00D1E61B /* PreventCaptureHostingViewController.swift in Sources */,
 				B570E1B32BB16AE200D1E61B /* CapturePreventionExampleApp.swift in Sources */,
 				B570E1E02BB16D2B00D1E61B /* PreventCapture+View.swift in Sources */,
 				B570E1DE2BB16CD000D1E61B /* PreventCapture+Modifier.swift in Sources */,
-				B570E1E42BB16E0900D1E61B /* CapturePreventingView.swift in Sources */,
+				B570E1E42BB16E0900D1E61B /* CapturePreventing+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

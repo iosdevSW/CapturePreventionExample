@@ -16,7 +16,7 @@ struct ContentView: View {
             
             Text("Capture Prevention Label")
                 .capturePrevented(isPrevented: true)
-                .frame(height: 60)
+                .frame(height: 40)
         }
         .padding()
     }

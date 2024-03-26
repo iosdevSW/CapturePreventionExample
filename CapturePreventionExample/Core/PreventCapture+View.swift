@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct _CapturePreventView<Content: View>: UIViewControllerRepresentable {
-    
-    typealias UIViewControllerType = PreventCaptureHostingViewController<Content>
+struct _CapturePreventView<Content: View>: UIViewRepresentable {
+
+    typealias UIViewType = CapturePreventingView
     
     private var isPrevented: Bool
     private let content: () -> Content
@@ -19,12 +19,13 @@ struct _CapturePreventView<Content: View>: UIViewControllerRepresentable {
         self.content = content
     }
     
-    func makeUIViewController(context: Context) -> UIViewControllerType {
-        PreventCaptureHostingViewController(isPrevented: isPrevented, content: content)
+    func makeUIView(context: Context) -> CapturePreventingView {
+        let hostingVC = UIHostingController(rootView: content())
+        return CapturePreventingView(isPrevented: isPrevented, contentView: hostingVC.view)
     }
     
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        uiViewController.isPrevented = isPrevented
+    func updateUIView(_ uiView: CapturePreventingView, context: Context) {
+        uiView.preventCapture = isPrevented
     }
 }
 

@@ -1,5 +1,5 @@
 //
-//  CapturePreventingView.swift
+//  CapturePreventing+UIView.swift
 //  CaptureProtectionExample
 //
 //  Created by iOS신상우 on 3/25/24.
@@ -32,6 +32,14 @@ public final class CapturePreventingView: UIView {
         
         setupUI()
     }
+    
+    public init(isPrevented: Bool, contentView: UIView) {
+        self.contentView = contentView
+        preventCapture = isPrevented
+        super.init(frame: .zero)
+        
+        setupUI()
+    }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -47,10 +55,12 @@ public final class CapturePreventingView: UIView {
         container.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            container.leadingAnchor.constraint(equalTo: leadingAnchor),
-            container.trailingAnchor.constraint(equalTo: trailingAnchor),
-            container.topAnchor.constraint(equalTo: topAnchor),
-            container.bottomAnchor.constraint(equalTo: bottomAnchor)
+            container.centerXAnchor.constraint(equalTo: centerXAnchor),
+            container.centerYAnchor.constraint(equalTo: centerYAnchor),
+//            container.leadingAnchor.constraint(equalTo: leadingAnchor),
+//            container.trailingAnchor.constraint(equalTo: trailingAnchor),
+//            container.topAnchor.constraint(equalTo: topAnchor),
+//            container.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
         
         guard let contentView = contentView else { return }
